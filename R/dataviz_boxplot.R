@@ -2,7 +2,7 @@
 library(shiny)
 library(ggplot2)
 
-# UI block
+# add UI block
 ui <- fluidPage(
   titlePanel("Iris Boxplot with ggplot2"),
   sidebarLayout(
@@ -21,9 +21,8 @@ ui <- fluidPage(
   )
 )
 
-# Server logic
+# Add Server logic
 server <- function(input, output) {
-  
   output$boxplot <- renderPlot({
     ggplot(iris, aes(x = Species, y = .data[[input$variable]], fill = Species)) +
       geom_boxplot() +
