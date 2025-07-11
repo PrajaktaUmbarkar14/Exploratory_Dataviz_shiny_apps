@@ -2,7 +2,7 @@
 library(shiny)
 library(ggplot2)
 
-# UI
+# UI block
 ui <- fluidPage(
   titlePanel("Iris Boxplot with ggplot2"),
   sidebarLayout(
