@@ -1,3 +1,4 @@
+# load required libraries
 library(shiny)
 library(ggplot2)
 
@@ -12,8 +13,8 @@ ui <- fluidPage(
       selectInput("xvar", "X-axis variable", choices = names(df), selected = "mpg"),
       selectInput("color", "color_by", choices = c("red", "green", "pink"), selected = "pink"),
       sliderInput("bins", "Number of bins:", min = 1, max = 20, value = 3)),
-     
-     mainPanel(plotOutput("Histogram"))
+    
+    mainPanel(plotOutput("Histogram"))
   )
 )
 

@@ -26,7 +26,7 @@ server <- function(input, output, session) {
       labs(title = paste("scatter plot of", input$xvar, "Vs", input$yvar),
            x_axis = input$xvar,
            y_axis = input$yvar) +
-    theme_minimal()
+      theme_minimal()
   })
 }
 

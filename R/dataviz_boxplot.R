@@ -1,10 +1,10 @@
+# load required libraries
 library(shiny)
 library(ggplot2)
 
 # UI
 ui <- fluidPage(
   titlePanel("Iris Boxplot with ggplot2"),
-  
   sidebarLayout(
     sidebarPanel(
       selectInput(
